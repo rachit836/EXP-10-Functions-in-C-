@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void change(int &changeposition,int &value,int (&arr)[],int n){
+void change(int &changeposition,int &value,int (&arr)[],int &n){
     
     
     
