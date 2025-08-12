@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+void increment(int count,int salary){
+    
+    if(count>=3){
+        int newsalary=((salary*20)/100)+salary;
+        cout<<"new salary = "<<newsalary<<endl;
+    
+    }
+    else{
+        cout<<"no increment ";
+    }
+    
+    
+    return;
+
+}
+int main(){
+    int researchproject;int researchpublication;int profit;int newproject;
+    cout<<"No. of research project done by you: "<<endl;
+    cin>>researchproject;
+    cout<<"No. of research publication done by you: "<<endl;
+    cin>>researchpublication;
+    cout<<"enter the profit"<<endl;
+    cin>>profit;
+    cout<<"No of new projects by the firm : "<<endl;
+    cin>>newproject;
+    int count=0;
+    if(researchproject>=1){
+        count++;
+    }
+    if(researchpublication>=1){
+        count++;
+    }
+    if(profit>=100000){
+        count++;
+    }
+    if(newproject>=1){
+        count++;
+    }
+    int salary;
+    cout<<"enter your salary : "<<endl;
+    cin>>salary;
+    increment(count,salary);
+    
+    
+    
+    
+}
+
+OUTPUT:
+No. of research project done by you: 
+0
+No. of research publication done by you: 
+1
+enter the profit
+200000
+No of new projects by the firm : 
+2
+enter your salary : 
+350000
+new salary = 420000
