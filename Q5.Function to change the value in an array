@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+void change(int &changeposition,int &value,int (&arr)[],int n){
+    
+    
+    
+    for(int i=0;i<n;i++){
+        if(i==changeposition){
+            arr[i]=value;
+            
+        }
+    }
+    cout<<"new array is "<<endl;
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+    
+    return;
+
+}
+int main(){
+    int n;
+    cout<<"enter the size of array"<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"enter the values of the array"<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+        
+    }
+    int changeposition;
+    cout<<"enter the position of an array to be change "<<endl;
+    cin>>changeposition;
+    int value;
+    cout<<"enter the new value "<<endl;
+    cin>>value;
+    change(changeposition,value,arr,n);
+    
+    
+    
+    
+}
+
+OUTPUT:
+enter the size of array
+7
+enter the values of the array
+10 20 30 40 50 60 70
+enter the position of an array to be change 
+3
+enter the new value 
+45
+new array is 
+10 20 30 45 50 60 70 
