@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void swap(int *x,int *y){
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    return;
+}
+int main(){
+    int a=5,b=10;
+    cout<<"USING POINTERS"<<endl;
+    cout<<"before swapping"<<endl;
+    cout<<"a = "<<a<<endl<<"b = "<<b<<endl;
+    swap(&a,&b);
+    cout<<"after swapping"<<endl;
+    cout<<"a = "<<a<<endl<<"b = "<<b;
+    
+}
+
+OUTPUT:
+USING POINTERS
+before swapping
+a = 5
+b = 10
+after swapping
+a = 10
+b = 5
